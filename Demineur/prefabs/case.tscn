@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5ffksvjrqsw8"]
+
+[ext_resource type="Texture2D" uid="uid://cyqhb4trprlok" path="res://textures/panel_metal.png" id="1_rchyl"]
+[ext_resource type="Script" path="res://scripts/demineur_bouton.gd" id="1_ycbde"]
+[ext_resource type="Texture2D" uid="uid://dsr4r6yq486gs" path="res://textures/panel_metalDark.png" id="2_q7mla"]
+[ext_resource type="Theme" uid="uid://fauwf1s8jds1" path="res://theme/ui.tres" id="4_uqyi2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_20tvx"]
+font_size = 72
+
+[node name="Case" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -15.5
+offset_right = 9.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_rchyl")
+texture_pressed = ExtResource("2_q7mla")
+script = ExtResource("1_ycbde")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_uqyi2")
+text = "0"
+label_settings = SubResource("LabelSettings_20tvx")
+horizontal_alignment = 1
+vertical_alignment = 1

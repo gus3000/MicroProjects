@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://8q4rih52vqyr"]
+
+[ext_resource type="Script" path="res://scripts/demineur.gd" id="1_qciso"]
+[ext_resource type="PackedScene" uid="uid://b5ffksvjrqsw8" path="res://prefabs/case.tscn" id="2_wtvj8"]
+
+[node name="Demineur" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_qciso")
+grid_size = Vector2i(10, 8)
+bomb_percentage = 10.0
+case = ExtResource("2_wtvj8")
