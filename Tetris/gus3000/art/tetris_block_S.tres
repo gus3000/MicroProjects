@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://6uy5dxn4c2f2"]
+
+[ext_resource type="Texture2D" uid="uid://b3hay7xlwvjns" path="res://art/tetris_blocks.png" id="1_wvllv"]
+
+[resource]
+atlas = ExtResource("1_wvllv")
+region = Rect2(0, 80, 48, 32)
