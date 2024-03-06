@@ -1,6 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://cofpciukyg3iw"]
+[gd_scene load_steps=10 format=3 uid="uid://cofpciukyg3iw"]
 
 [ext_resource type="Script" path="res://scripts/board.gd" id="1_wdlf1"]
+[ext_resource type="PackedScene" uid="uid://c3f34s0hjcp3r" path="res://prefabs/block_I.tscn" id="2_jlwfb"]
+[ext_resource type="PackedScene" uid="uid://ea8k8n8wx7ff" path="res://prefabs/block_J.tscn" id="3_g7qit"]
+[ext_resource type="PackedScene" uid="uid://cxcm2lipu7sob" path="res://prefabs/block_L.tscn" id="4_l4ute"]
+[ext_resource type="PackedScene" uid="uid://uwyh0fbjjury" path="res://prefabs/block_O.tscn" id="5_g8tf2"]
+[ext_resource type="PackedScene" uid="uid://csv75u0shprdm" path="res://prefabs/block_S.tscn" id="6_4klqu"]
+[ext_resource type="PackedScene" uid="uid://d1s7jq624kfog" path="res://prefabs/block_T.tscn" id="7_0ut7u"]
+[ext_resource type="PackedScene" uid="uid://cj1y1oh81nw4b" path="res://prefabs/block_Z.tscn" id="8_b413x"]
+[ext_resource type="Texture2D" uid="uid://gya4lu4htnvi" path="res://art/tetris_background.png" id="9_fcqru"]
 
 [node name="Board" type="Node2D"]
 script = ExtResource("1_wdlf1")
+block_prefabs = Array[PackedScene]([ExtResource("2_jlwfb"), ExtResource("5_g8tf2"), ExtResource("7_0ut7u"), ExtResource("6_4klqu"), ExtResource("8_b413x"), ExtResource("3_g7qit"), ExtResource("4_l4ute")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(80, 159)
+texture = ExtResource("9_fcqru")
+region_enabled = true
+region_rect = Rect2(0, 0, 160, 320)

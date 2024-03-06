@@ -11,10 +11,19 @@ config_version=5
 [application]
 
 config/name="Tetris"
+run/main_scene="res://scenes/board.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameConstants="*res://scripts/game_constants.gd"
+
 [display]
 
-window/size/viewport_width=480
-window/size/viewport_height=720
+window/size/viewport_width=160
+window/size/viewport_height=320
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

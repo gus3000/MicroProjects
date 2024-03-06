@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1s7jq624kfog"]
+
+[ext_resource type="PackedScene" uid="uid://j6kwdeoowjuh" path="res://prefabs/block.tscn" id="1_8v2h1"]
+[ext_resource type="Texture2D" uid="uid://dnow5q774udit" path="res://art/tetris_block_T.tres" id="2_i7dv5"]
+
+[node name="Block" instance=ExtResource("1_8v2h1")]
+type = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+position = Vector2(0, -8)
+texture = ExtResource("2_i7dv5")

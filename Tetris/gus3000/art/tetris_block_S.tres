@@ -1,7 +1,8 @@
-[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://6uy5dxn4c2f2"]
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b52dih4vuufwa"]
 
-[ext_resource type="Texture2D" uid="uid://b3hay7xlwvjns" path="res://art/tetris_blocks.png" id="1_wvllv"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aelhw"]
+load_path = "res://.godot/imported/tetris_blocks.png-372c90f49695c19f01cd1bda0ba30dcb.ctex"
 
 [resource]
-atlas = ExtResource("1_wvllv")
+atlas = SubResource("CompressedTexture2D_aelhw")
 region = Rect2(0, 80, 48, 32)
